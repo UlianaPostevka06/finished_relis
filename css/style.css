@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: "Inter", serif;
+}
+
+[class *= "subtitle"] {
+  font-size: 36px;
+}
+
+.fact__section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.fact-block {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section__name {
+  padding: 5px 30px;
+  border-radius: 100px;
+  border: 1px solid #000;
+}
+
+.fact__stat {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.fact__item {
+  height: 100px;
+  background: #F7F7F8;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  color: #fff;
+
+  .stat__block {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.stat__number {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+[class *= "subtitle"] {
+  font-size: 36px;
+}
+
+.fact__section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.fact-block {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section__name {
+  padding: 5px 30px;
+  border-radius: 100px;
+  border: 1px solid #000;
+}
+
+.fact__stat {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.fact__item {
+  height: 100px;
+  background: #F7F7F8;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  color: #fff;
+
+  .stat__block {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.stat__number {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.tab-number {
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 24px;
+}
+
+.tab-number.active {
+  background-color: #FFEB3B;
+}
+
+.tab-number {
+  background-color: lightgray;
+  display: inline-block; 
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+
+.tab.active .tab-number {
+  background-color: #FFEB3B;
+}
+
+.block {
+  display: none;
+}
+
+.block.active {
+  display: block;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slider-btn {
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #FFEB3B;
+  color: #000;
+}
+
+.block.active {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 20px 20px; 
+  grid-template-areas: 
+    "leson statistic web"
+    "leson statistic camera"
+    "leson statistic camera"; 
+    height: 600px; 
+}
+
+.leson { 
+  grid-area: leson; 
+  background: #000;
+}
+
+.statistic { 
+  grid-area: statistic; 
+  background: #000;
+}
+
+.web { 
+  grid-area: web; 
+  background: #000;
+}
+
+#block1 {
+  .statistic {
+    background: url(../img/learn-img/data__img-01.jpg);
+  }
+}
+
+#block2 {
+  .statistic {
+    background: url(../img/learn-img/data__img-02.jpg);
+  }
+}
+
+#block3 {
+  .statistic {
+    background: url(../img/learn-img/data__img-03.jpg);
+  }
+}
+
+#block4 {
+  .statistic {
+    background: url(../img/learn-img/data__img-04.jpg);
+  }
+}
+
+.camera {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .icon__block {
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    background: #000; 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.camera {
+  grid-area: camera; 
+  background: #000;
+}
+
+.block div {
+  background: #e8e8e8;
+}
+
+.leson {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.leson__name {
+  font-size: 43px;
+  font-weight: 600;
+  width: 330px;
+}
+
+.web {
+  overflow: hidden;
+  position: relative;
+  img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.format__block {
+  margin-bottom: 50px;
+}
+
+.training__section {
+  margin-bottom: 200px;
+  background: #F7F7F8;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+}
+
+.training__subtitle {
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.level__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.level {
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.level-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.level__block {
+  width: 660px;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+
+.level__img {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.level__description {
+  width: 280px;
+}
+
+.level-toggle {
+  height: 50px;
+  width: 50px;
+  background: #000;
+  color: #fff;
+  border-radius: 100px;
+  cursor: pointer;
+
+  .fa-solid {
+    transition: transform 0.3s ease;
+  }  
+}
+
+.level__description-block {
+  display: none;
+  transition: opacity 1s ease;
+}
+
+.level__description-block.show {
+  display: block;
+}
+
+.teacher__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.teacher__img {
+  border-radius: 16px;
+}
+
+.teacher__item-2 {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 16px;
+}
+
+.teacher__item-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.teacher__exepirience {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  span {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 16px;
+  }
+}
+
+.price__section {
+  margin-top: 150px;
+  .fact-block {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.price__grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.price__item {
+  position: relative;
+  .price__bg-img {
+    height: 100%;
+  }
+}
+
+.price__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.price {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.price-list-item {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price-list-item::before {
+  content: url(../img/check.svg);
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.plan__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  height: 40px;
+  width: 170px;
+  border-radius: 100px;
+  border: 1px solid #000;
+}
+
+.price__item-02 {
+  color: #fff;
+  span {
+    border-color: #fff;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+
+.all__text {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
+}
+
+.sub__button-block {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding-top: 50px;
+  border-top: 2px solid #37474F;
+  width: 550px;
+}
+
+.sub__button {
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+
+.black__btn {
+  background: #000;
+  color: #fff;
+}
+
+.white__btn {
+  background: #fff;
+  color: #000;
+}
+
+#toUp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #212121;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  display: none; /* Спочатку прихована */
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#toUp.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#toUp.hide {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+#toUp:hover {
+  background-color: #263238;
+}

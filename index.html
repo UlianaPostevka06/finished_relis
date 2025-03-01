@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <button id="toUp" class="to-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <header class="header">
+      <div class="hero__container">
+        <div class="hero__item hero__item-1">
+          <nav class="nav">
+            <span class="logo">
+              <i class="fa-brands fa-slack"></i>
+            </span>
+            <ul class="menu">
+              <li class="menu__list">
+                <a href="#program" class="menu__link"><span class="icon"><i class="fa-regular fa-folder"></i></span>Програма</a>
+              </li>
+              <li class="menu__list">
+                <a href="#teachers" class="menu__link"><span class="icon"><i class="fa-solid fa-users"></i></span>Вчителі</a>
+              </li>
+              <li class="menu__list">
+                <a href="#pricing" class="menu__link"><span class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </span>Тарифи</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hero__block">
+            <div class="hero__text-block">
+              <h1 class="title">Онлайн‑школа вільної англійської</h1>
+              <p class="hero__text">Пройди курс підготовки до ЗНО з англійської мови, та здай на високі бали і поступи в ВНЗ</p>
+              <div class="hero__block-btn">
+                <button class="button start__learn">Почати навчаня</button>
+                <button class="button see__prog">Подивитись програму</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__item hero__item-2">
+          <button id="start__learn" class="button start__learn">Почати навчаня</button>
+          <img src="img/hero-img.png" alt="" class="hero__img">
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="fact__section fact__container">
+        <div class="fact-block">
+          <span class="section__name">Факти про школу</span>
+          <h2 class="fact__subtitle">Чому нам варто довіряти?</h2>
+        </div>
+        <ul class="fact__stat">
+          <li class="fact__item stat__item-01">
+            <img src="img/stat__img-01.jpg" alt="">
+            <div class="stat__block">
+              <span class="stat__number" data-max="9">0 +</span>
+              <span class="stat__text">Працюємо</span>
+            </div>
+          </li>
+          <li class="fact__item stat__item-02">
+            <img src="img/stat__img-02.jpg" alt="">
+            <div class="stat__block">
+              <span class="stat__number" data-max="2000">0 +</span>
+              <span class="stat__text">Студентів</span>
+            </div>
+          </li>
+          <li class="fact__item stat__item-03">
+            <img src="img/stat__img-03.jpg" alt="">
+          </li>
+          <li class="fact__item stat__item-04">
+            <img src="img/stat__img-04.jpg" alt="">
+            <div class="stat__block">
+              <span class="stat__number" data-max="769">0</span>
+              <span class="stat__text">Двістібальника</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="program" class="section__container format__section">
+        <div class="format__block">
+          <span class="section__name">Формат навчання</span>
+          <h2 class="format__subtitle">Що тебе чекає на курсі?</h2>
+        </div>
+        <div class="container">
+          <div class="tabs">
+            <button class="tab active" data-target="block1">
+              <span class="tab-number">01</span> Вебінари та уроки
+            </button>
+            <button class="tab" data-target="block2">
+              <span class="tab-number">02</span> Корисні матеріали
+            </button>
+            <button class="tab" data-target="block3">
+              <span class="tab-number">03</span> Домашнє завдання
+            </button>
+            <button class="tab" data-target="block4">
+              <span class="tab-number">04</span> Speaking club
+            </button>
+          </div>
+          <div class="content">
+            <div id="block1" class="block active">
+              <div class="leson">
+                <p class="leson__name">Формат уроків - вебінари</p>
+                <div class="leson__block">
+                  <p class="leson__name">4 години</p>
+                  <p class="leson__text">Середня тривалість</p>
+                </div>
+              </div>
+              <div class="statistic"></div>
+              <div class="web">
+                <img src="img/learn-img/web.jpg" alt="" class="web__img">
+              </div>
+              <div class="camera">
+                <div class="icon__block">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <p class="leson__name">{запис вебінарів}</p>
+                <p class="leson__text">Ти завжди можеш знайти запис уроку на платформі, щоб вивчити або повторитти матеріал</p>
+              </div>
+            </div>
+            <div id="block2" class="block">
+              <div class="leson">
+                <p class="leson__name">Корисні матеріали</p>
+                <div class="leson__block">
+                  <p class="leson__text">Доступ до презентацій, шаблонів, та інструкцій.</p>
+                </div>
+              </div>
+              <div class="statistic"></div>
+              <div class="web">
+                <img src="img/learn-img/web-1.jpg" alt="" class="web__img">
+              </div>
+              <div class="camera">
+                <div class="icon__block">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <p class="leson__name">Зручні навчальні ресурси</p>
+                <p class="leson__text">Завантажуйте й користуйтеся матеріалами будь-де</p>
+              </div>
+            </div>
+            <div id="block3" class="block">
+              <div class="leson">
+                <p class="leson__name">Практичні завдання для закріплення знань.</p>
+                <div class="leson__block">
+                  <p class="leson__text">Виконуйте завдання та отримуйте зворотний зв'язок. <br>
+                    Домашня практика для впевненості в темі.</p>
+                </div>
+              </div>
+              <div class="statistic"></div>
+              <div class="web">
+                <img src="img/learn-img/web-2.jpg" alt="" class="web__img">
+              </div>
+              <div class="camera">
+                <div class="icon__block">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <p class="leson__name">{запис вебінарів}</p>
+                <p class="leson__text">Ти завжди можеш знайти запис уроку на платформі, щоб вивчити або повторитти матеріал</p>
+              </div>
+            </div>
+            <div id="block4" class="block">
+              <div class="leson">
+                <p class="leson__name">Формат уроків - вебінари</p>
+                <div class="leson__block">
+                  <p class="leson__name">4 години</p>
+                  <p class="leson__text">Середня тривалість</p>
+                </div>
+              </div>
+              <div class="statistic"></div>
+              <div class="web">
+                <img src="img/learn-img/web-3.jpg" alt="" class="web__img">
+              </div>
+              <div class="camera">
+                <div class="icon__block">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <p class="leson__name">{запис вебінарів}</p>
+                <p class="leson__text">Ти завжди можеш знайти запис уроку на платформі, щоб вивчити або повторитти матеріал</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-buttons">
+            <button class="slider-btn prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="slider-btn next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="training__section">
+        <div class="training__block training__container">
+          <span class="section__name">Формат навчання</span>
+          <h2 class="training__subtitle">Що тебе чекає на курсі?</h2>
+        </div>
+        <div class="level__container">
+          <div class="level">
+            <div class="level-block">
+              <span class="level-num">level 1</span>
+              <div class="level__block">
+                <img src="img/learn-img-01.jpg" alt="" class="level__img">
+                <div class="level__description">
+                  <h2 class="level-title">Вересень</h2>
+                  <p class="level__description-text">На першому етапі ми познайомимось із форматом ЗНО-2025, складем план підготовки та почнемо розбирати завдання з іспиту.</p>
+                </div>
+                <button class="level-toggle">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="level__description-block">
+              <h2 class="level__subtitle">На першому етапі ми:</h2>
+              <ul class="level__list">
+                <li class="level__item">Ознайомимося з форматом ЗНО-2025 та основними вимогами.</li>
+                <li class="level__item">Розробимо індивідуальний план підготовки.</li>
+                <li class="level__item">Почнемо розбирати базові завдання з різних тем.</li>
+                <li class="level__item">Приділимо увагу основним стратегіям підготовки до тестування.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="level">
+            <div class="level-block">
+              <span class="level-num">level 2</span>
+              <div class="level__block">
+                <img src="img/learn-img-02.jpg" alt="" class="level__img">
+                <div class="level__description">
+                  <h2 class="level-title">Жовтень</h2>
+                  <p class="level__description-text">На другому етапі ми приділимо увагу граматиці, лексиці, аудіюванню та читанню. Також закріпимо словотворення на практиці.</p>
+                </div>
+                <button class="level-toggle">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="level__description-block">
+              <h2 class="level__subtitle">На першому етапі ми:</h2>
+              <ul class="level__list">
+                <li class="level__item">Ознайомимося з форматом ЗНО-2025 та основними вимогами.</li>
+                <li class="level__item">Розробимо індивідуальний план підготовки.</li>
+                <li class="level__item">Почнемо розбирати базові завдання з різних тем.</li>
+                <li class="level__item">Приділимо увагу основним стратегіям підготовки до тестування.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="level">
+            <div class="level-block">
+              <span class="level-num">level 3</span>
+              <div class="level__block">
+                <img src="img/learn-img-03.jpg" alt="" class="level__img">
+                <div class="level__description">
+                  <h2 class="level-title">Листопад</h2>
+                  <p class="level__description-text">На третьому етапі ще глибше зануримось у вивчення граматики та
+                    лексики. Розберемо завдання усної частини.</p>
+                </div>
+                <button class="level-toggle">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="level__description-block">
+              <h2 class="level__subtitle">На першому етапі ми:</h2>
+              <ul class="level__list">
+                <li class="level__item">Ознайомимося з форматом ЗНО-2025 та основними вимогами.</li>
+                <li class="level__item">Розробимо індивідуальний план підготовки.</li>
+                <li class="level__item">Почнемо розбирати базові завдання з різних тем.</li>
+                <li class="level__item">Приділимо увагу основним стратегіям підготовки до тестування.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="level">
+            <div class="level-block">
+              <span class="level-num">level 4</span>
+              <div class="level__block">
+                <img src="img/learn-img-04.jpg" alt="" class="level__img">
+                <div class="level__description">
+                  <h2 class="level-title">Грудень</h2>
+                  <p class="level__description-text">На четвертому етапі закріпимо граматику на практиці, розберемо 4 завдання усної частини, а також навчимось писати листи й есе.</p>
+                </div>
+                <button class="level-toggle">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="level__description-block">
+              <h2 class="level__subtitle">На першому етапі ми:</h2>
+              <ul class="level__list">
+                <li class="level__item">Ознайомимося з форматом ЗНО-2025 та основними вимогами.</li>
+                <li class="level__item">Розробимо індивідуальний план підготовки.</li>
+                <li class="level__item">Почнемо розбирати базові завдання з різних тем.</li>
+                <li class="level__item">Приділимо увагу основним стратегіям підготовки до тестування.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="level">
+            <div class="level-block">
+              <span class="level-num">level 5</span>
+              <div class="level__block">
+                <img src="img/learn-img-05.jpg" alt="" class="level__img">
+                <div class="level__description">
+                  <h2 class="level-title">Січень</h2>
+                  <p class="level__description-text">На п'ятому етапі вивчимо пунктуацію, лексику й фразові дієслова,
+                    повторимо граматику й закріпимо на практиці читання та завдання 37-38.</p>
+                </div>
+                <button class="level-toggle">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="level__description-block">
+              <h2 class="level__subtitle">На першому етапі ми:</h2>
+              <ul class="level__list">
+                <li class="level__item">Ознайомимося з форматом ЗНО-2025 та основними вимогами.</li>
+                <li class="level__item">Розробимо індивідуальний план підготовки.</li>
+                <li class="level__item">Почнемо розбирати базові завдання з різних тем.</li>
+                <li class="level__item">Приділимо увагу основним стратегіям підготовки до тестування.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="teachers" class="teacher__section teacher__container">
+        <div class="fact-block">
+          <span class="section__name">Факти про школу</span>
+          <h2 class="fact__subtitle">Чому нам варто довіряти?</h2>
+        </div>
+        <div class="teacher__grid">
+          <div class="teacher__item teacher__item-1">
+            <img src="img/teacher__img-01.jpg" alt="" class="teacher__img">
+          </div>
+          <div class="teacher__item teacher__item-2">
+            <div class="teacher__description">
+              <h2 class="teacher__name">Смирнова Олена</h2>
+              <p class="teacher__text">Викладаю англійську мову вже 10 років, щороку оновлюю свої результати ЗНО. За 10
+                років роботи я зрозуміла, що найголовніше — це робити уроки цікавими, щоб ви не лише навчалися, але й
+                отримували задоволення від процесу.</p>
+            </div>
+            <div class="teacher__exepirience">
+              <span>Досвід 10 років</span>
+              <span>200 балів</span>
+            </div>
+          </div>
+          <div class="teacher__item teacher__item-3"></div>
+          <div class="teacher__item teacher__item-3"></div>
+          <div class="teacher__item teacher__item-1">
+            <img src="img/teacher__img-02.jpg" alt="" class="teacher__img">
+          </div>
+          <div class="teacher__item teacher__item-2">
+            <div class="teacher__description">
+              <h2 class="teacher__name">Смирнова Олена</h2>
+              <p class="teacher__text">Викладаю англійську мову вже 10 років, щороку оновлюю свої результати ЗНО. За 10
+                років роботи я зрозуміла, що найголовніше — це робити уроки цікавими, щоб ви не лише навчалися, але й
+                отримували задоволення від процесу.</p>
+            </div>
+            <div class="teacher__exepirience">
+              <span>Досвід 10 років</span>
+              <span>200 балів</span>
+            </div>
+          </div>
+          <div class="teacher__item teacher__item-1">
+            <img src="img/teacher__img-03.jpg" alt="" class="teacher__img">
+          </div>
+          <div class="teacher__item teacher__item-2">
+            <div class="teacher__description">
+              <h2 class="teacher__name">Смирнова Олена</h2>
+              <p class="teacher__text">Викладаю англійську мову вже 10 років, щороку оновлюю свої результати ЗНО. За 10
+                років роботи я зрозуміла, що найголовніше — це робити уроки цікавими, щоб ви не лише навчалися, але й
+                отримували задоволення від процесу.</p>
+            </div>
+            <div class="teacher__exepirience">
+              <span>Досвід 10 років</span>
+              <span>200 балів</span>
+            </div>
+          </div>
+          <div class="teacher__item teacher__item-3"></div>
+        </div>
+      </section>
+      <section id="pricing" class="price__section price__container">
+        <div class="fact-block">
+          <span class="section__name">Тарифи</span>
+          <h2 class="fact__subtitle">Вибирай зручний тариф</h2>
+        </div>
+        <div class="price__grid">
+          <div class="price__item">
+            <img src="img/subtract-01.png" alt="" class="price__bg-img">
+            <div class="price__block">
+              <h2 class="price">3000 ₴/міс</h2>
+              <ul class="price__list">
+                <li class="price-list-item">Підготовка до ЗНО на 80+ балів</li>
+                <li class="price-list-item">12 онлайн-занять та відеоуроків на місяць</li>
+                <li class="price-list-item">Особистий кабінет із записами занять та матеріалами</li>
+                <li class="price-list-item">Speaking-клуб для практики говоріння</li>
+                <li class="price-list-item">Корисні чек-листи, гіди, словники</li>
+                <li class="price-list-item">Домашні завдання та тести</li>
+                <li class="price-list-item">Конспекти та робочий зошит до кожного уроку</li>
+                <li class="price-list-item">1 пробник на місяць для відстеження прогресу</li>
+                <li class="price-list-item">Доступ до закритого чату з іншими учнями</li>
+                <li class="price-list-item">Вебінар із психологом</li>
+              </ul>
+            </div>
+              <button class="plan__btn">Самостійний</button>
+              <div class="sub__button-block">
+                <button class="sub__button black__btn">Оформити підписку</button>
+              </div>
+          </div>
+          <div class="price__item price__item-02">
+            <img src="img/subtract-02.png" alt="" class="price__bg-img">
+            <div class="price__block">
+              <h2 class="price">4500 ₴/міс</h2>
+              <div class="all__text">Все з тарифу «Самостійний»</div>
+              <span class="section__name">Тарифи</span>
+              <ul class="price__list">
+                <li class="price-list-item">Особистий куратор, який склав ЄДІ з англійської на 85+ балів</li>
+                <li class="price-list-item">Перевірка домашніх завдань</li>
+                <li class="price-list-item">Дзвінок з носієм 1 раз на місяць для практики говоріння</li>
+                <li class="price-list-item">Відповіді на будь-які запитання у чаті з особистим куратором</li>
+                <li class="price-list-item">Бонусний вебінар 1 раз на місяць для тих, хто хоче скласти на 85+</li>
+              </ul>
+            </div>
+              <button class="plan__btn">З куратором</button>
+              <div class="sub__button-block"> 
+                <button class="sub__button white__btn">Оформити підписку</button>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+</script>
+<script>
+  // Знаходимо кнопку
+  const startLearnButton = document.getElementById("start__learn");
+
+  // Додаємо обробник події на клік
+  startLearnButton.addEventListener('click', () => {
+      window.location.href = 'login.html'; // Перенаправлення на login.html
+  });
+</script>
+
+  <script src="js/scrollToTop.js"></script>
+
+  <script src="js/stat.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
