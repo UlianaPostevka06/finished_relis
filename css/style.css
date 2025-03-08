@@ -515,6 +515,7 @@ body {
 }
 
 #toUp {
+  z-index: 999;
   position: fixed;
   bottom: 50px;
   right: 50px;

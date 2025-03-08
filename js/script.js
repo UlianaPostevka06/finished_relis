@@ -1,6 +1,6 @@
 document.querySelectorAll('.level-toggle').forEach((toggleButton) => {
     toggleButton.addEventListener('click', () => {
-        const descriptionBlosk = toggleButton.closest('.level').querySelector('.level__decription-block');
+        const descriptionBlosk = toggleButton.closest('.level').querySelector('.level__description-block');
 
         if (descriptionBlosk.style.display === 'none' || !descriptionBlosk.style.display) {
             descriptionBlosk.style.display = 'block';
